@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/stylesheets/style.css" />
+    <title>An interactive Webpage</title>
+  </head>
+  <body>
+    <h1>An interactive Webpage</h1>
+    <!--Color Changer Section-->
+    <section>
+      <h2>1. Color changer</h2>
+      <button id="gray-button" style="font-size: 20px">Gray</button>
+      <button id="blue-button" style="font-size: 20px">Blue</button>
+      <button id="pink-button" style="font-size: 20px">Pink</button>
+      <br />
+      <div id="color-box" class="gray"></div>
+    </section>
+    <hr />
+    <!--Counter Section-->
+    <section>
+      <h2>2. Counter</h2>
+      <button id="counter-button" style="font-size: 20px">
+        This fabulous button
+      </button>
+      has been clicked <span id="countspan">0</span> times.
+    </section>
+    <br />
+    <hr />
+    <!--Even or Odd Section-->
+    <section>
+      <h2>3. Even or Odd?</h2>
+      <button id="even-or-odd-button" style="font-size: 20px">
+        Is the count even or odd?
+      </button>
+    </section>
+    <script src="assets/javascripts/clickhandlers.js"></script>
+  </body>
+</html>

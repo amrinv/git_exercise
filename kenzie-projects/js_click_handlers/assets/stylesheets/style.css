@@ -1,0 +1,13 @@
+#color-box {
+  width: 200px;
+  height: 200px;
+}
+.gray {
+  background: gray;
+}
+.blue {
+  background: rgb(67, 111, 255);
+}
+.pink {
+  background: pink;
+}
