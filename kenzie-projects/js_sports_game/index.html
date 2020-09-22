@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Game Challenge</title>
+  </head>
+  <body class="main">
+    <!-- <audio
+      id="page_load_audio"
+      src="assets/Audio/melodyloops-preview-power-up-2m0s.mp3"
+      loop="loop"
+    ></audio> -->
+    <audio id="page_load_audio">
+      <source
+        src="assets/Audio/melodyloops-preview-power-up-2m0s.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+    <div>
+      <h1>My JS Game</h1>
+      <!-- Reset Portion -->
+      <div id="reset-container">
+        <audio id="reset-audio">
+          <source src="assets/Audio/game_over.mp3" type="audio/mpeg" />
+        </audio>
+        <button id="reset-button">RESET</button><br />
+        NUMBER OF RESETS: <span id="num-resets">0</span>
+      </div>
+      <div class="clear"></div>
+      <!-- Left Section Team 1 -->
+      <div class="left">
+        <h2>
+          Goal Diggers &#128526; <br />
+          Team 1
+        </h2>
+        <audio id="team1-shoot-audio">
+          <source src="assets/Audio/shot.mp3" type="audio/mpeg" />
+        </audio>
+        <div class="goals">
+          SHOTS TAKEN: <span id="teamone-numshots">0</span><br />
+          <br />
+          GOALS: <span id="teamone-numgoals">0</span>
+        </div>
+        <br />
+        <div>
+          <button id="teamone-shoot-button">SHOOT</button>
+        </div>
+      </div>
+      <!-- Right Section Team 2 -->
+      <div class="right">
+        <h2>
+          Tiger Commandos 🐯 <br />
+          Team 2
+        </h2>
+        <audio id="team2-shoot-audio">
+          <source
+            src="assets/Audio/gunshot_huntingrifle.mp3"
+            type="audio/mpeg"
+          />
+        </audio>
+        <div class="goals">
+          SHOTS TAKEN: <span id="teamtwo-numshots">0</span><br />
+          <br />
+          GOALS: <span id="teamtwo-numgoals">0</span>
+        </div>
+        <br />
+        <div>
+          <button id="teamtwo-shoot-button">SHOOT</button>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <script src="assets/javascript/game.js"></script>
+  </body>
+</html>
